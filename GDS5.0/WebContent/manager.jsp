@@ -100,7 +100,7 @@ td {
 			href="#orders">Orders</a> <a class="active" href="#inventory">Inventory</a>
 		<a class="active" href="viewFiscInfo.jsp">Financial Information</a> <a
 			class="active" href="employeeManagement.jsp">Employee Management</a>
-		<a class="emp" href="Main.jsp">Lougout</a>
+		<a class="emp" href="Main.jsp">Logout</a>
 	</div>
 
 	<center>

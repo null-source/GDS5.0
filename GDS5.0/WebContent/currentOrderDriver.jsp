@@ -80,6 +80,7 @@ td {
 	text-align: left;
 	vertical-align: middle;
 }
+
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Driver</title>
@@ -88,7 +89,6 @@ td {
 	<div class="topnav">
 		<a class="active" href="driver.jsp">Home</a> <a class="active"
 			href="#orders">Orders</a>
-		<a class ="active" href="currentOrderDriver.jsp">Current Order</a>
 			<a class="active" id="clock" onclick="getElementById('clock').innerHTML=Date()">Clock in/out</a>
 		<a class="active" href="viewFiscInfo.jsp">
 		<a class="emp" href="Main.jsp">Logout</a>
@@ -99,8 +99,7 @@ td {
 		</h1>
 	</center>
 	
-	<div>
-		<h3><u>Available Orders</u></h3>
+		<h3><u>Current Order</u></h3>
 	</div>
 	<div id="table-wrapper">
 			<div id="table-scroll">
@@ -120,6 +119,11 @@ td {
 				</table>
 			</div>
 		</div>
+	<div class="btn-group">
+	<button>LOADING</button>
+	<button>EN ROUTE</button>
+	<button>COMPLETE</button>
+	</div>
 	
 	
 </body>
