@@ -5,29 +5,121 @@
 <head>
 <style>
 body {
-	background-color: linen;
+	background-color: white;
 	font-family: "helvetica";
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #133251;
+}
+
+.topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.emp {
+	float: right;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.topnav a.emp:hover {
+	background-color: #ddd;
+	color: black;
+}
+#table-wrapper {
+	position: relative;
+}
+
+#table-scroll {
+	height: 200px;
+	overflow: auto;
+	margin-top: 20px;
+}
+
+#table-wrapper table {
+	width: 50%;
+}
+
+#table-wrapper table * {
+	background: white;
+	color: black;
+}
+
+#table-wrapper table thead th .text {
+	position: left;
+	top: -20px;
+	z-index: 2;
+	height: 20px;
+	width: 35%;
+	border: 1px solid black;
+}
+table {
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+td {
+	text-align: left;
+	vertical-align: middle;
 }
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Shopper</title>
 </head>
 <body>
-	<a href="EmployeeLogin.jsp">HOME</a>
+	<div class="topnav">
+		<a class="active" href="shopper.jsp">Home</a> <a class="active"
+			href="#orders">Orders</a>
+			<a class="active" id="clock" onclick="getElementById('clock').innerHTML=Date()">Clock in/out</a>
+		<a class="active" href="viewFiscInfo.jsp">
+		<a class="emp" href="Main.jsp">Lougout</a>
+	</div>
 	<center>
 		<h1>
 			<i>SHOPPER</i>
 		</h1>
-		<a href="viewOrders.jsp">View orders</a> <br>
-		<button onclick="getElementById('clock').innerHTML=Date()">Clock
-			in/out</button>
-
-		<p id="clock"></p>
 	</center>
-	<br>
-	<br>
-	<div style="position: absolute; bottom: 5px; background-color: linen">
-		<button type="button" name="logout" onclick="history.back()">logout</button>
+	
+	<div>
+		<h3><u>Orders</u></h3>
 	</div>
+	<div id="table-wrapper">
+			<div id="table-scroll">
+				<br>
+				<table>
+					<thead>
+						<tr>
+							<th><span class="Price">Order ID</span></th>
+							<th><span class="Item">Description</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>8888</td>
+							<td>Adam Scott: Pencil</td>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	
+	
 </body>
 </html>

@@ -29,7 +29,7 @@ body {
 }
 
 #table-wrapper table thead th .text {
-	position: absolute;
+	position: left;
 	top: -20px;
 	z-index: 2;
 	height: 20px;
@@ -37,8 +37,16 @@ body {
 	border: 1px solid black;
 }
 
+table {
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
 td {
-	text-align: center;
+	text-align: left;
 	vertical-align: middle;
 }
 
@@ -95,7 +103,7 @@ div.c {
 	<div>
 		<center>
 			<input type="text" id="mySearch" placeholder="Search for something..">
-			<input type="submit" id="mySubmit" value="SEARCH"> 
+			<input type="submit" id="mySubmit" value="SEARCH">
 		</center>
 	</div>
 	<hr width=500>
