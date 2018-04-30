@@ -1,0 +1,6 @@
+a001:password1:Brenda Trejo:4
+a002:password2:Shane Bogard: 4
+a003:password3:Jordan McCarthy:4
+a004:password4:Daniel Ghazvini:4
+a005:password5:Stephanie Callahan:4
+a006:password6:Clarence Bumanglag:0

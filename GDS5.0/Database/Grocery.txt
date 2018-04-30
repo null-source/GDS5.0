@@ -1,0 +1,28 @@
+d001:Whole Milk:1 Gal Whole Milk:018-04-30:100:2.25:Dairy
+d002:Cheddar Cheese Block:16oz Block of Cheddar Cheese:2018-04-30:150:4.25:Dairy
+d003:Large Eggs:12ct Large Grade A Eggs:2018-04-30:200:3.15:Dairy
+ms001:Ground Beef:1lb Ground Beef:2018-04-30:100:Meat And Seafood
+ms002:Top Sirloin Steaks:4lbs Top Sirloin Steak Package:2018-04-30:100:20:Meat And Seafood
+ms003:Beef Brisket:4lbs Beef Brisket Package:2018-04-30:100:12:Meat And Seafood
+ms004:Pork Loin Chops:3lbs Pork Loin Chop Package:2018-04-30:100:6.25:Meat And Seafood
+ms005:Center Cut Ham Steak:3lbs Center Cut Ham Steak:2018-04-30:100:12.5:Meat And Seafood
+p001:Bananas:Cavendish Banana Hand:2018-04-30:200:1.25:Produce
+p002:Apples:Granny Smith Apples:2018-04-30:200:1.5:Produce
+p003:Oranges:Navel Oranges:2018-04-30:150:2:Produce
+p004:Strawberries:Large Package Strawberries:2018-04-30:225:2.5:Produce
+p005:Broccoli:Brocooli Crowns:2018-04-30:175:2.25:Produce
+p006:Carrots:Regular Carrots:2018-04-30:75:1.15:Produce
+p007:Potatoes:Russet Potatoes:2018-04-30:175:0.75:Produce
+p008:Cucumbers:Regular Cucumbers:2018-04-30:175:0.45:Produce
+p009:Avocados:Large Hass Avocados:2018-04-30:90:1.5:Produce
+p010:Cauliflower:Regular Cauliflower:2018-04-30:80:2.35:Produce
+p011:Celery:Regular Celery Stalk:2018-04-30:125:0.9:Produce
+p012:Tomatoes:Medium Tomatoes:2018-04-30:300:0.4:Produce
+p013:Corn:Regular Unshucked Corn:2018-04-30:300:0.5:Produce
+p014:Iceberg Lettuce:Ball of Iceberg Lettuce:2018-04-30:115:0.8:Produce 
+p015:Green Bell Peppers:Regular Green Bell Peppers:2018-04-30:165:0.65:Produce
+p016:Jalapeno Peppers:Regular Jalapeno Peppers:2018-04-30:300:0.1:Produce
+p017:White Onions:Regular White Onions:2018-04-30:225:0.6:Produce
+p018:Purple Eggplant:Regular Purple Eggplant:2018-04-30:100:1.15:Produce
+p019:Garlic:Regular Garlic:2018-04-30:100:0.65:Produce
+p020:Asparagus:Regular Asparagus:2018-04-30:100:1.35:Produce
