@@ -6,36 +6,56 @@
 <style>
 body {
 	background-color: "white"";
-	font-family: "helvetica";
 }
+
 td {
-  text-align: center;
-  vertical-align: middle;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #133251;
+}
+
+.topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
 }
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Employees</title>
 </head>
 <body>
-<a href="Main.jsp">HOME</a>
+	<div class="topnav">
+		<a class="active" href="Main.jsp">Home</a>
+	</div>
 	<center>
 		<h1>
 			<i> EMPLOYEES</i>
 		</h1>
-		<a href="shopper.jsp">SHOPPER</a> |
-		<a href="manager.jsp">MANAGER</a> |
-		<a href="maintainer.jsp">STORAGE MAINTAINER</a> |
-		<a href="driver.jsp">DRIVER</a>
-		
+		<a href="shopper.jsp">SHOPPER</a> | <a href="manager.jsp">MANAGER</a>
+		| <a href="maintainer.jsp">STORAGE MAINTAINER</a> | <a
+			href="driver.jsp">DRIVER</a>
+
 	</center>
-<br>
+	<br>
 	<div
 		style='position: background; z-index: 0; left: 0; top: 0; width: 100%; height: 50%'>
 		<center>
-		<img src='gds_logo.jpg' style='width: 329px; height: 150px' alt='[]' />
+			<img src='gds_logo.jpg' style='width: 329px; height: 150px' alt='[]' />
 		</center>
 	</div>
-<br>
+	<br>
 	<form action="EmployeeLogin" method="GET">
 		<center>
 			<table>
@@ -62,7 +82,7 @@ td {
 
 			</table>
 		</center>
-<br>
+		<br>
 
 	</form>
 	<%

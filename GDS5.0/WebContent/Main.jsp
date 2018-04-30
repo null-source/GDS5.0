@@ -5,22 +5,60 @@
 <head>
 <style>
 body {
-	background-color: linen;
+	background-color: white;
 	font-family: "helvetica";
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #133251;
+}
+
+.topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.emp {
+	float: right;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.topnav a.emp:hover {
+	background-color: #ddd;
+	color: black;
 }
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GDS</title>
 </head>
 <body>
+	<div class="topnav">
+		<a class="active" href="customerLogin.jsp">Login</a> <a
+			href="register.jsp">Register</a> <a href="searchPage.jsp">Browse</a>
+		<a href="cart.jsp">Cart</a> <a class="emp"
+			href="EmployeeLogin.jsp">Employees</a>
+	</div>
+
 	<center>
 		<h1>
 			<i> G R O C E R Y &ensp; D E L I V E R Y &ensp; S E R V I C E</i>
 		</h1>
 	</center>
 	<center>
-	<a href="errorPage.jsp"><b></b><i>MYSTERIOUS LINK</i></b></a>
-		<br>
 		<br>
 		<table>
 			<tr>
@@ -28,11 +66,14 @@ body {
 				<!-- SEARCH BUTTON, TEMP LINKED TO searchPage.jsp -->
 				<td><a href="searchPage.jsp"><input type="submit"
 						value="SEARCH"></a></td>
-				<td><a href="cart.jsp"><input type="submit" id="cart" value="CART"></a></td>
+
 			</tr>
 		</table>
+		<br>
+		<!--  
 		<br> <a href="customerLogin.jsp">Login</a> <br> <a
 			href="register.jsp">Register</a> <br> <br>
+		-->
 	</center>
 	<div
 		style='position: background; z-index: 0; left: 0; top: 0; width: 100%; height: 50%'>
@@ -41,9 +82,11 @@ body {
 				alt='[]' />
 		</center>
 	</div>
+	<!--  
 	<div style="position: absolute; bottom: 5px; background-color: linen">
 		<a href="EmployeeLogin.jsp">EMPLOYEES</a>
 	</div>
+	-->
 
 </body>
 </html>

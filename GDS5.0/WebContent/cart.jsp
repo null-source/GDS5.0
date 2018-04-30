@@ -5,7 +5,7 @@
 <head>
 <style>
 body {
-	background-color: linen;
+	background-color: white;
 	font-family: "helvetica";
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 #table-wrapper table * {
-	background: linen;
+	background: white;
 	color: black;
 }
 
@@ -41,12 +41,49 @@ td {
 	text-align: center;
 	vertical-align: middle;
 }
+
+.topnav {
+	overflow: hidden;
+	background-color: #133251;
+}
+
+.topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.checkout {
+	float: right;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.topnav a.checkout:hover {
+	background-color: #ddd;
+	color: black;
+}
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Your cart</title>
 </head>
 <body>
-	<a href="searchPage.jsp">HOME</a>
+	<div class="topnav">
+		<a class="active" href="Main.jsp">Home</a> <a href="">Account</a> <a
+			href="searchPage.jsp">Deals</a> <a class="checkout"
+			href="checkout.jsp">Checkout</a>
+	</div>
 	<center>
 		<h1>
 			<i>CART</i>
@@ -86,9 +123,8 @@ td {
 				</table>
 			</div>
 		</div>
-		<br>
-		<input type="submit" id="removeItem" value="REMOVE ITEM">
-		<a href="checkout.jsp"><input type="submit" id="CHECKOUT" value="CHECKOUT"></a>
+		<br> <input type="submit" id="removeItem" value="REMOVE ITEM">
+		
 	</center>
 </body>
 </html>

@@ -5,7 +5,7 @@
 <head>
 <style>
 body {
-	background-color: linen;
+	background-color: white;
 	font-family: "helvetica";
 }
 
@@ -14,7 +14,7 @@ body {
 }
 
 #table-scroll {
-	height: 150px;
+	height: 300px;
 	overflow: auto;
 	margin-top: 20px;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 #table-wrapper table * {
-	background: linen;
+	background: white;
 	color: black;
 }
 
@@ -45,12 +45,48 @@ td {
 div.c {
 	text-align: center;
 }
+
+.topnav {
+	overflow: hidden;
+	background-color: #133251;
+}
+
+.topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.cart {
+	float: right;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.topnav a.cart:hover {
+	background-color: #ddd;
+	color: black;
+}
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GDS</title>
 </head>
 <body>
-	<a href="Main.jsp">HOME</a>
+	<div class="topnav">
+		<a class="active" href="Main.jsp">Home</a> <a href="">Account</a> <a
+			href="searchPage.jsp">Deals</a> <a class="cart" href="cart.jsp">Cart</a>
+	</div>
 	<center>
 		<h1>
 			<i> G R O C E R Y &ensp; D E L I V E R Y &ensp; S E R V I C E</i>
@@ -59,8 +95,7 @@ div.c {
 	<div>
 		<center>
 			<input type="text" id="mySearch" placeholder="Search for something..">
-			<input type="submit" id="mySubmit" value="SEARCH">
-			<a href="cart.jsp"><input type="submit" id="cart" value="CART"></a>
+			<input type="submit" id="mySubmit" value="SEARCH"> 
 		</center>
 	</div>
 	<hr width=500>
@@ -85,7 +120,8 @@ div.c {
 							<td>Red Apple</td>
 						<tr>
 							<td>5.99</td>
-							<td>Lettuce</td><tr>
+							<td>Lettuce</td>
+						<tr>
 							<td>5.99</td>
 							<td>Milk</td>
 						<tr>
@@ -94,7 +130,6 @@ div.c {
 						<tr>
 							<td>5.99</td>
 							<td>Bread</td>
-						
 						<tr>
 							<td>5.99</td>
 							<td>Ham</td>
@@ -119,6 +154,18 @@ div.c {
 						<tr>
 							<td>5.99</td>
 							<td>Yogurt</td>
+						<tr>
+							<td>29.99</td>
+							<td>Golden Apple</td>
+						<tr>
+							<td>29.99</td>
+							<td>Golden Apple</td>
+						<tr>
+							<td>29.99</td>
+							<td>Golden Apple</td>
+						<tr>
+							<td>29.99</td>
+							<td>Golden Apple</td>
 					</tbody>
 				</table>
 			</div>

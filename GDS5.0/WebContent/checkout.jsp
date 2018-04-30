@@ -5,15 +5,37 @@
 <head>
 <style>
 body {
-	background-color: linen;
+	background-color: white;
 	font-family: "helvetica";
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #133251;
+}
+
+.topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
 }
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Checkout</title>
 </head>
 <body>
-	<a href="Main.jsp">HOME</a>
+	<div class="topnav">
+		<a class="active" href="Main.jsp">Home</a> <a href="">Account</a> <a
+			href="searchPage.jsp">Deals</a> 
+	</div>
 	<center>
 		<h1>
 			<i>CHECKOUT</i>
