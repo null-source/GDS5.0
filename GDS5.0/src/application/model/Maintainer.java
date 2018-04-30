@@ -4,7 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
-
+import application.model.Inventory;
 import com.controller.DataFetcher;
 
 public class Maintainer extends Employee {
@@ -13,29 +13,17 @@ public class Maintainer extends Employee {
 		super(empId, empPw, fullName, empType);
 	}
 
+	// Returns a string version of the grocery list
 	public ArrayList<String> retrieveGroceryTable() {
-
-		ArrayList<String> groceries = new ArrayList<String>();
-		DataFetcher data = new DataFetcher();
-		ResultSet resultSet = data.fetchList();
-		
-		try {
-			while (resultSet.next()) {
-				String itemId = resultSet.getString("itemId");
-				String name = resultSet.getString("name");
-				String description = resultSet.getString("description");
-				double price = resultSet.getDouble("price");
-				int quantity = resultSet.getInt("quantity");
-				String area = resultSet.getString("area");
-				Date lastDt = resultSet.getDate("lastDt");
-
-				Grocery groc = new Grocery(itemId, name, description, price, quantity, lastDt, area);
-				groceries.add(groc.toString());
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
+		ArrayList<String> groceryTable = new ArrayList<String>();
+		Inventory inventory = new Inventory();
+		ArrayList<Grocery> groceries = inventory.getInventory();
+		for (int i = 0; i < groceries.size(); i++) {
+			groceryTable.add(groceries.get(i).toString());
+			
 		}
 		
-		return groceries;
+		return groceryTable;
+		
 	}
 }

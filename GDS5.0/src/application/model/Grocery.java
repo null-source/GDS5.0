@@ -10,8 +10,9 @@ public class Grocery {
 	public String name;
 	public String itemId;
 	public int quantity;
+	public int index;
 	
-	public Grocery (String itemId, String name, String desc, double price, int quantity, Date lastDt2, String area) {
+	public Grocery (String itemId, String name, String desc, double price, int quantity, Date lastDt2, String area, int index) {
 		this.itemId = itemId;
 		this.name = name;
 		this.desc = desc;
@@ -19,6 +20,7 @@ public class Grocery {
 		this.quantity = quantity;
 		this.lastDt = lastDt2;
 		this.area = area;
+		this.index = index;
 	}
 
 	public double getPrice() {
@@ -75,6 +77,14 @@ public class Grocery {
 
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
+	}
+	
+	public int getIndex() {
+		return this.index;
+	}
+	
+	public void setIndex(int index) {
+		this.index = index;
 	}
 	
 	public String toString() {
