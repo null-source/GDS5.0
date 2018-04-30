@@ -19,7 +19,7 @@ body {
 		</h1>
 	</center>
 	<center>
-	<a href="errorPage.jsp"><b></b><i>MYSTERIOUS LINK</i></b></a>
+	<a href="errorPage.jsp"><b><i>MYSTERIOUS LINK</i></b></a>
 		<br>
 		<br>
 		<table>
